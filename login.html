@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <div class="container">
+    <div class="header">
+        <h1>Create Form</h1>
+    </div>
+    <form action="" class="form" id="form">
+        <div class="form-control">
+         <label>Username</label><br> 
+         <input type="text" placeholder="De-prof" id="username" onkeyup="validateName()">
+         <span class="small" id="username-error">-</span> 
+        </div>
+
+        <div class="form-control"> 
+            <label>Email</label><br>
+            <input type="email" placeholder="your-email@gmail.com" id="email" onkeyup="validateEmail()">
+            <span class="small" id="email-error">-</span>
+           </div>
+
+           <div class="form-control">
+            <label>Password</label><br> 
+            <input type="password" placeholder="****" id="password" onkeyup="validatePassword()">
+            <span class="small" id="password-error">-</span>
+           </div>
+
+           <div class="form-control">
+            <label>Zip Code</label><br>
+            <input type="text" placeholder="11111" id="zipcode" onkeyup="validateZipcode()">
+            <span class="small" id="zipcode-error">-</span>
+           </div>
+
+           <!-- <div class="form-control">
+            <label>Message Here</label><br>
+            <textarea placeholder="Write your text here" id="message" rows="5" cols="0" onkeyup="validateMessage()"></textarea>
+            <span class="small" id="message-error">-</span>
+            </div> -->
+
+           <button onclick="return validateForm()">Submit</button>
+           <span class="small button" id="button-error"></span>
+    </form>
+   </div>
+    <script src="login.js"></script>
+</body>
+</html>
